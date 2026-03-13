@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Prakruthi Portfolio</title>
-
-<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<title>Prakruthi P S | Java Backend Developer</title>
 
 <style>
 
@@ -17,23 +10,56 @@ margin:0;
 font-family:Arial;
 background:#0f172a;
 color:white;
+}
+
+header{
+text-align:center;
+padding:100px 20px;
+}
+
+header h1{
+font-size:45px;
+}
+
+header p{
+color:#94a3b8;
+font-size:20px;
+}
+
+nav{
+background:#020617;
+padding:15px;
 text-align:center;
 }
 
+nav a{
+color:white;
+margin:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
 section{
-padding:100px 20px;
+max-width:900px;
+margin:auto;
+padding:60px 20px;
 }
 
 .card{
 background:#1e293b;
-padding:30px;
+padding:25px;
 border-radius:10px;
-max-width:600px;
-margin:auto;
+margin-bottom:20px;
 }
 
-h1{
-font-size:40px;
+h2{
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
 }
 
 </style>
@@ -42,37 +68,87 @@ font-size:40px;
 
 <body>
 
-<div id="root"></div>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<script type="text/babel">
-
-function App(){
-
-return(
-
-<section>
-
-<div className="card">
+<header>
 
 <h1>Prakruthi P S</h1>
 
-<h2>Java Backend Developer</h2>
+<p>Java Backend Developer | Spring Boot | REST APIs</p>
 
-<p>Java | Spring Boot | REST APIs</p>
+</header>
 
-<p>Bengaluru, India</p>
+<section id="about">
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<p>
+Java Backend Developer with experience building enterprise backend systems for automotive engineering tools using Java and Spring Boot.
+</p>
 
 </div>
 
 </section>
 
-)
+<section id="skills">
 
-}
+<div class="card">
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App/>)
+<h2>Skills</h2>
 
-</script>
+<ul>
+<li>Java</li>
+<li>Spring Boot</li>
+<li>REST APIs</li>
+<li>MySQL</li>
+<li>PostgreSQL</li>
+<li>Git</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<div class="card">
+
+<h2>Experience</h2>
+
+<p>
+Associate Consultant – Java Backend Developer  
+CMEX Management Pvt Ltd  
+Client: Mercedes-Benz R&D India
+</p>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<p>Email: psp.gowda2803@gmail.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Prakruthi P S</p>
+
+</footer>
 
 </body>
 </html>
